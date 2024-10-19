@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package statistics;
+
+service statistics{
+    rpc get_sensor(Empty) returns (stream Sensors);
+    rpc get_mean(Mean_Request) returns (StringMessage);
+}
+
+message Empty{
+
+}
+
+message Sensors{
+    int64 _id=1;
+    string data_type=2;
+}
+
+message Mean_Request{
+    int64 sensor_id=1;
+    string data_type=2;
+}
+
+message StringMessage{
+    string mean=1;
+}

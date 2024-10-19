@@ -1,0 +1,11 @@
+{% if name %}
+    <h1>Hello, {{name}}!</h1>
+    <ol>
+        {% for e in elements %}
+            <li>{{e}}</li>
+        {% endfor %}
+    </ol>
+    <p>a value from list: {{elements[0]}}</p>
+{% else %}
+    <h1> Hello, Stranger!</h1>
+{% endif %}

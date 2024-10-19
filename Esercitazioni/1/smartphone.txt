@@ -1,0 +1,6 @@
+prelevato [id = 19]
+prelevato [id = 90]
+prelevato [id = 16]
+prelevato [id = 42]
+prelevato [id = 48]
+prelevato [id = 46]

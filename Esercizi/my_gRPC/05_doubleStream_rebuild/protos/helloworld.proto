@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package hello_world_d;
+
+service Greeter{
+    rpc say_hello(stream HelloRequest) returns (stream HelloReply);
+}
+
+message HelloRequest{
+    string name = 1;
+}
+
+message HelloReply{
+    string msg = 1;
+}

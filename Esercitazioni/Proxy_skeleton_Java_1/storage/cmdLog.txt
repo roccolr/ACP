@@ -1,0 +1,16 @@
+command: 3
+command: 3
+command: 0
+command: 3
+command: 1
+command: 1
+command: 1
+command: 1
+command: 0
+command: 1
+command: 1
+command: 3
+command: 3
+command: 1
+command: 3
+command: 1

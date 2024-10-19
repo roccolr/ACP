@@ -1,0 +1,15 @@
+syntax = "proto3";
+package hellosalerno_duplex;
+
+service Greeter{
+    rpc sayHello(stream helloRequest) returns (stream helloReply) {}
+}
+
+message helloRequest{
+    string nome=1;
+}
+
+message helloReply{
+    string msg=1;
+}
+

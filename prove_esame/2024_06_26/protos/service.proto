@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package serv;
+
+service Management{
+    rpc sell (sell_request) returns (sell_response);
+    rpc buy (buy_request) returns (buy_response);
+}
+
+message sell_request{
+    int32  id = 1;
+}
+
+message sell_response{
+    bool res =1;
+}
+
+message buy_request{
+    
+}
+
+message buy_response{
+    int32 id = 1;
+}

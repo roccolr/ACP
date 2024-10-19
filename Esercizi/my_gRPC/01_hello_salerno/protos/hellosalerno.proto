@@ -1,0 +1,23 @@
+//definizione sintassi sintassi utilizzata
+
+syntax = "proto3";
+
+
+//definizione del package (per evitare problemi e conflitti di nomi)
+package hellosalerno;
+
+//definiamo un servizio denominato Greeter (Capital??)
+service Greeter{
+    //manda greetings
+    rpc SayHello(HelloRequest) returns (HelloReply) {}
+}
+
+//il messaggio di richiesta contiene una stringa che è il nome utente
+message HelloRequest{
+    string name = 1;
+}
+
+//il messaggio di risposta contiene una stringa di benvenuto 
+message HelloReply{
+    string message = 1;
+}
